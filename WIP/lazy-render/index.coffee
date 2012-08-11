@@ -1,4 +1,5 @@
 content = """
+
 /**
  * Module dependencies.
  */
