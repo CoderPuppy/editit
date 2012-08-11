@@ -8,17 +8,15 @@
 @media -stylus-debug-info{filename{font-family:file\:\/\/C:\Users\Drew\Development\Code\EditIt\WIP\lazy-render\index\.styl}line{font-family:\000031}}
 #container {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
   line-height: 16px;
   overflow-y: scroll;
 }
 
-/* line 13 : C:\Users\Drew\Development\Code\EditIt\WIP\lazy-render\index.styl */
+/* line 11 : C:\Users\Drew\Development\Code\EditIt\WIP\lazy-render\index.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/C:\Users\Drew\Development\Code\EditIt\WIP\lazy-render\index\.styl}line{font-family:\0000313}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/C:\Users\Drew\Development\Code\EditIt\WIP\lazy-render\index\.styl}line{font-family:\0000311}}
 #container #text {
   position: absolute;
   left: 0;
