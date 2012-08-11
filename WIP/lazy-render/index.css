@@ -1,3 +1,11 @@
+
+/* line 1 : C:\Users\Drew\AppData\Roaming\npm\node_modules\stylus\lib\functions\index.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/C:\Users\Drew\AppData\Roaming\npm\node_modules\stylus\lib\functions\index\.styl}line{font-family:\000031}}
+
+/* line 1 : C:\Users\Drew\Development\Code\EditIt\WIP\lazy-render\index.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/C:\Users\Drew\Development\Code\EditIt\WIP\lazy-render\index\.styl}line{font-family:\000031}}
 #container {
   position: fixed;
   top: 0;
@@ -7,6 +15,10 @@
   line-height: 16px;
   overflow-y: scroll;
 }
+
+/* line 13 : C:\Users\Drew\Development\Code\EditIt\WIP\lazy-render\index.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/C:\Users\Drew\Development\Code\EditIt\WIP\lazy-render\index\.styl}line{font-family:\0000313}}
 #container #text {
   position: absolute;
   left: 0;

@@ -136,16 +136,23 @@ scroll = ->
 	viewport =
 		height: container.height()
 
-	startLine = amountScrolled / 16
-	howMany   = viewport.height / 16
-	endLine   = startLine + howMany
+	howMany = viewport.height / 16
 
 	# console.log "startLine: #{startLine}, howMany: #{howMany}, endLine: #{endLine}, amountScrolled: #{amountScrolled}"
 	# console.log "viewport:", viewport
 
-	text.css
-		paddingTop: amountScrolled
-		paddingBottom: (height - amountScrolled) - viewport.height
+	if amountScrolled + viewport.height >= height
+		paddingTop = height - viewport.height
+		paddingBottom = 0
+		startLine = lines.length - howMany
+	else
+		startLine = amountScrolled / 16
+		paddingTop = amountScrolled
+		paddingBottom = (height - amountScrolled) - viewport.height
+
+	endLine = startLine + howMany
+
+	text.css {paddingTop, paddingBottom}
 
 	text.text lines.slice(startLine, endLine + 2).join('\n')
 	text.html text.html() + '<div class="clear"></div>'
