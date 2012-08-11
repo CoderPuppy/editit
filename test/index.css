@@ -1,0 +1,21 @@
+.editit-comp[data-comp=gutter] {
+  position: absolute;
+  height: 100%;
+  min-width: 30px;
+  padding-right: 5px;
+  margin-right: 5px;
+  background: #b3b3b3;
+  color: #000;
+}
+.editit-comp[data-comp=layers] {
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+#editor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

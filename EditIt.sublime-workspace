@@ -1,0 +1,891 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"paddin",
+				"paddingRight"
+			],
+			[
+				"margin",
+				"marginLeft"
+			],
+			[
+				"remo",
+				"removeListener"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"even",
+				"EventEmitter"
+			],
+			[
+				"l",
+				"layers"
+			],
+			[
+				"_render",
+				"_renderComps"
+			],
+			[
+				"_",
+				"_subComps"
+			],
+			[
+				"con",
+				"constructor"
+			],
+			[
+				"get",
+				"getOwnPropertyDescriptor"
+			],
+			[
+				"dein",
+				"defineProperty"
+			],
+			[
+				"define",
+				"defineProperty"
+			],
+			[
+				"pr",
+				"prototype"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"url",
+				"url(image-url.gif)"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"call",
+				"call_user_func_array"
+			],
+			[
+				"cam",
+				"camelCase-lower"
+			],
+			[
+				"array_",
+				"array_map"
+			],
+			[
+				"arr",
+				"array_merge"
+			],
+			[
+				"array",
+				"array_map"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"is_",
+				"is_array"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"request",
+				"request_url"
+			],
+			[
+				"requ",
+				"request_uri"
+			],
+			[
+				"calluser",
+				"call_user_func_array"
+			],
+			[
+				"func",
+				"func_get_args"
+			],
+			[
+				"fun_g",
+				"func_get_args"
+			],
+			[
+				"each",
+				"eachTick"
+			],
+			[
+				"register",
+				"register_tick_function"
+			],
+			[
+				"ob_get",
+				"ob_get_contents"
+			],
+			[
+				"parse",
+				"parse_str"
+			],
+			[
+				"ob_clea",
+				"ob_end_clean"
+			],
+			[
+				"ob_Get",
+				"ob_get_contents"
+			],
+			[
+				"handl",
+				"handler"
+			],
+			[
+				"parse_",
+				"parse_url"
+			],
+			[
+				"Error",
+				"ErrorMiddleware"
+			],
+			[
+				"handler",
+				"handleErrors"
+			],
+			[
+				"handle",
+				"handleErrors"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"array_m",
+				"array_merge"
+			],
+			[
+				"call_user",
+				"call_user_method_array"
+			],
+			[
+				"new",
+				"newVal"
+			],
+			[
+				"a",
+				"actions"
+			],
+			[
+				"st",
+				"stdout"
+			],
+			[
+				"jquer",
+				"jquery-ui"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/components/editor.coffee",
+			"settings":
+			{
+				"buffer_size": 793,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/utils/el.coffee",
+			"settings":
+			{
+				"buffer_size": 805,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/utils/num.coffee",
+			"settings":
+			{
+				"buffer_size": 115,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/components/index.coffee",
+			"settings":
+			{
+				"buffer_size": 2520,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/index.coffee",
+			"settings":
+			{
+				"buffer_size": 164,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/components/gutter.coffee",
+			"settings":
+			{
+				"buffer_size": 506,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test/index.coffee",
+			"settings":
+			{
+				"buffer_size": 399,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 196.0,
+		"selected_items":
+		[
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"coffee",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Function"
+			],
+			[
+				"stylus",
+				"Set Syntax: Stylus"
+			],
+			[
+				"Snippet: Re",
+				"Snippet: Range Comprehension (exclusive)"
+			],
+			[
+				"coffe",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Obje",
+				"Set Syntax: Objective-C"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"disabe",
+				"Package Control: Disable Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: Dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"packa",
+				"Package Control: Disable Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"d",
+				"Package Control: Discover Packages"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"Pac",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"todo",
+				"Set Syntax: Todo.txt"
+			],
+			[
+				"Java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"JSON",
+				"Set Syntax: JSON"
+			],
+			[
+				"Sty",
+				"Set Syntax: Stylus"
+			],
+			[
+				"Jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"",
+				"Bookmarks: Clear All"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"Javas",
+				"Set Syntax: JavaScript (Rails)"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 282.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Drew/Development/Code/EditIt/lib/utils/events.js",
+		"/C/Users/Drew/Development/Code/EditIt/lib/utils/extend.js",
+		"/C/Users/Drew/Development/Code/EditIt/src/utils/events.js",
+		"/C/Users/Drew/Development/Code/EditIt/test/index.styl",
+		"/C/Users/Drew/Development/Code/EditIt/lib/components/time.js",
+		"/C/Users/Drew/Development/Code/EditIt/src/components/time.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/lib/index.js",
+		"/C/Users/Drew/Development/Code/EditIt/src/components/gutter.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/lib/components/gutter.js",
+		"/C/Users/Drew/Development/Code/EditIt/lib/components/layers.js",
+		"/C/Users/Drew/Development/Code/EditIt/src/components/layers.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/src/components/editor.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/src/index.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/test/index.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/lib/components/index.js",
+		"/C/Users/Drew/Development/Code/EditIt/src/components/index.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/lib/components/editor.js",
+		"/C/Users/Drew/Development/Code/EditIt/css/layers.styl",
+		"/C/Users/Drew/Development/Code/EditIt/css/gutter.styl",
+		"/C/Users/Drew/Development/Code/EditIt/css/index.styl",
+		"/C/Users/Drew/Development/Code/EditIt/test/index.html",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/User/Javascript-Class.sublime-snippet",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/User/CommonJS.sublime-snippet",
+		"/C/Users/Drew/Development/Code/EditIt/lib/utils/extends.js",
+		"/C/Users/Drew/Development/Code/EditIt/test/index.js",
+		"/C/Users/Drew/Development/Code/EditIt/lib/editor.js",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/JavaScript/function-(fun).sublime-snippet",
+		"/C/Users/Drew/Development/Code/EditIt/jquery.js",
+		"/C/Users/Drew/Development/Code/EditIt/lib/css/index.styl",
+		"/C/Users/Drew/Development/Code/EditIt/test/index.css",
+		"/C/Users/Drew/Development/Code/EditIt/require.js",
+		"/C/Users/Drew/Downloads/bash-command-not-found.sh",
+		"/C/Users/Drew/Downloads/shell_method_missing.rb",
+		"/C/Users/Drew/Downloads/drnic-inputrc.sh",
+		"/C/Users/Drew/Downloads/command_not_found_handler.sh",
+		"/C/Users/Drew/.ssh/id_rsa.4.18.2012.jeremy-and-becky-desktop.shell.cjb.net.pub",
+		"/C/Program Files (x86)/Acrylic DNS Proxy/AcrylicHosts.txt",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/Drew/Development/Code/WebCanvasComponents/WebCanvasComponents.sublime-project",
+		"/C/Users/Drew/Development/Code/WebCanvasComponents/lib/index.js",
+		"/C/Users/Drew/Development/Code/WebCanvasComponents/index.js",
+		"/C/Users/Drew/Development/Code/CSS/framework/text-effects.styl",
+		"/C/Users/Drew/Development/Code/CSS/framework/other/index.styl",
+		"/C/Users/Drew/Development/Code/CSS/framework/other/text-effects.styl",
+		"/C/Users/Drew/Development/Code/CSS/framework/test.server.js",
+		"/C/Users/Drew/Development/Code/CSS/framework/components/navbar.styl",
+		"/C/Users/Drew/Development/Code/CSS/framework/components/nav.styl",
+		"/C/Users/Drew/Development/Code/CSS/framework/index.html",
+		"/C/Users/Drew/Development/Code/CSS/text.styl",
+		"/C/Users/Drew/Development/Code/CSS/framework/framework.sublime-workspace",
+		"/C/Users/Drew/School/Persuasion",
+		"/C/Users/Drew/School/Persuasion. Be",
+		"/C/Users/Drew/Development/Code/Editor/mockups/tabs/tab.html",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/ZenCoding/Default.sublime-keymap",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Drew/Development/Code/Editor/mockups/tabs/close.svg",
+		"/C/Users/Drew/Development/Code/test.coffee",
+		"/C/Users/Drew/Development/Code/test.coffe.coffee",
+		"/C/Users/Drew/Development/Code/Editor/nep/package.json",
+		"/C/Users/Drew/Development/Code/Editor/mockups/tab.html",
+		"/C/Users/Drew/Development/Code/Editor/mockups/right.svg",
+		"/C/Users/Drew/Development/Code/Editor/mockups/tab.svg",
+		"/C/Users/Drew/Development/Code/Editor/mockups/tabpath.svg",
+		"/C/Users/Drew/Development/Code/Editor/mockups/left.svg",
+		"/C/Users/Drew/Development/Code/Editor/mockups/center.svg",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/User/Terminal.sublime-settings",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Terminal/Default (Windows).sublime-keymap",
+		"/C/Users/Drew/Development/Code/Editor/tabpath.svg",
+		"/C/Users/Drew/Development/Code/Editor/tab.svg",
+		"/C/Users/Drew/Development/Code/Tabs/newtab.html",
+		"/C/wamp/www/fun-with-php/framework/lib/http/middleware.php",
+		"/C/wamp/www/fun-with-php/framework/lib/http/stack.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/http/middleware/index.php",
+		"/C/wamp/www/fun-with-php/fun2.php",
+		"/C/wamp/www/fun-with-php/framework/index.php",
+		"/C/wamp/www/fun-with-php/framework/lib/utils.php",
+		"/C/wamp/www/fun-with-php/framework/lib/autoloader.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/fun3.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/http/example.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/http/index.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/error",
+		"/C/Users/Drew/Development/Code/fun-with-php/output",
+		"/C/Users/Drew/Development/Code/fun-with-php/http/middleware/capture.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/http/helpers/capture.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/http/fun4.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/fun4.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/http/fun3.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/fun5.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/fun6.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/httpserver/examples/example_server.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/httpserver/httprequest.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/httpserver/httpserver.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/httpserver/httpresponse.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/fun7.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/fun3.output",
+		"/C/wamp/www/fun-with-php2/fun2.php",
+		"/C/Users/Drew/Downloads/fun-with-php2.download",
+		"/C/wamp/www/fun-with-php/fun1.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/fun2.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/fun1.php",
+		"/C/wamp/www/fun-with-php/.htaccess",
+		"/C/wamp/bin/php/php5.3.9/php.ini-development",
+		"/C/wamp/bin/php/php5.3.9/php.ini",
+		"/C/Users/Drew/Development/Code/fun-with-php/fun2-router.php",
+		"/C/Users/Drew/Development/Code/fun-with-php/php.js",
+		"/C/Users/Drew/.ssh/id_rsa",
+		"/C/Users/Drew/.ssh/id_rsa.pub",
+		"/C/Users/Drew/Development/Libraries/node/deps/v8/src/list-inl.h",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Eval Sel/eval_sel.py",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Eval Sel/Default (Windows).sublime-keymap",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Eval Sel/repl.js",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Eval Sel/eval_sel.sublime-settings",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Theme - Pseudo OSX/Pseudo OSX.sublime-theme",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/ZenCoding/Default (Windows).sublime-keymap",
+		"/C/Users/Drew/Development/Workspace/jQuery element from selector/WebContent/create.js",
+		"/C/Users/Drew/Development/UserInfo.java",
+		"/C/Users/Drew/Development/WriteFile.java",
+		"/C/Users/Drew/Development/Code/natural.js",
+		"/C/Users/Drew/Development/test-project.sublime-workspace",
+		"/C/Users/Drew/Development/www/xampp/xampp/xampp.js",
+		"/C/Users/Drew/Development/noBadCharacters.js",
+		"/C/Users/Drew/Development/Code/nodejs-app-0/package.json",
+		"/C/Users/Drew/Development/Code/nodejs-app-0/index.js",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/HTML/html_completions.py"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"switch (",
+			" (",
+			"for (",
+			"if (",
+			"old",
+			"require",
+			"192",
+			"$box-shadow",
+			"nodejs",
+			"ctrl+shift+n",
+			"ctrl+shift+t",
+			"HTTP",
+			"::",
+			"read_request_complete",
+			"read_socket",
+			"route_request(",
+			"route_request",
+			"get_php_response",
+			"li",
+			"theme",
+			"\"action\": \"",
+			"ctrl+i",
+			"safjsdkfjafj",
+			"rwe7tw3948754389htjtuih5iugyv",
+			"hell",
+			"hel",
+			"he"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"switch(",
+			"for(",
+			"if(",
+			"box-shadow"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/components/editor.coffee",
+					"settings":
+					{
+						"buffer_size": 793,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								767,
+								767
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/utils/el.coffee",
+					"settings":
+					{
+						"buffer_size": 805,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								636,
+								636
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/utils/num.coffee",
+					"settings":
+					{
+						"buffer_size": 115,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/components/index.coffee",
+					"settings":
+					{
+						"buffer_size": 2520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1390,
+								1390
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 572.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/index.coffee",
+					"settings":
+					{
+						"buffer_size": 164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								164,
+								164
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/components/gutter.coffee",
+					"settings":
+					{
+						"buffer_size": 506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								203
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "test/index.coffee",
+					"settings":
+					{
+						"buffer_size": 399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								399,
+								399
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 257.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"li",
+				"Libraries/node/deps/v8/src/list-inl.h"
+			],
+			[
+				"",
+				"Code/natural.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Drew/School/Fairy Tale/Fairy Tale.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true
+}
