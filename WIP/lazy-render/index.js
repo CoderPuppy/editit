@@ -8,19 +8,27 @@ container = void 0;
 text = void 0;
 
 scroll = function() {
-  var amountScrolled, endLine, height, howMany, lines, startLine, viewport;
+  var amountScrolled, endLine, height, howMany, lines, paddingBottom, paddingTop, startLine, viewport;
   lines = content.split('\n');
   height = lines.length * 16;
   amountScrolled = container[0].scrollTop;
   viewport = {
     height: container.height()
   };
-  startLine = amountScrolled / 16;
   howMany = viewport.height / 16;
+  if (amountScrolled + viewport.height >= height) {
+    paddingTop = height - viewport.height;
+    paddingBottom = 0;
+    startLine = lines.length - howMany;
+  } else {
+    startLine = amountScrolled / 16;
+    paddingTop = amountScrolled;
+    paddingBottom = (height - amountScrolled) - viewport.height;
+  }
   endLine = startLine + howMany;
   text.css({
-    paddingTop: amountScrolled,
-    paddingBottom: (height - amountScrolled) - viewport.height
+    paddingTop: paddingTop,
+    paddingBottom: paddingBottom
   });
   text.text(lines.slice(startLine, endLine + 2).join('\n'));
   return text.html(text.html() + '<div class="clear"></div>');
