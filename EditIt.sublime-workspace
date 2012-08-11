@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"start",
+				"startLine"
+			],
+			[
+				"padd",
+				"paddingBottom"
+			],
+			[
+				"padding",
+				"paddingTop"
+			],
+			[
+				"view",
+				"viewport"
+			],
+			[
 				"paddin",
 				"paddingRight"
 			],
@@ -200,59 +216,27 @@
 	"buffers":
 	[
 		{
-			"file": "src/components/editor.coffee",
+			"file": "WIP/lazy-render/index.html",
 			"settings":
 			{
-				"buffer_size": 793,
+				"buffer_size": 331,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/utils/el.coffee",
+			"file": "WIP/lazy-render/index.styl",
 			"settings":
 			{
-				"buffer_size": 805,
+				"buffer_size": 184,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/utils/num.coffee",
+			"file": "WIP/lazy-render/index.coffee",
 			"settings":
 			{
-				"buffer_size": 115,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/components/index.coffee",
-			"settings":
-			{
-				"buffer_size": 2520,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/index.coffee",
-			"settings":
-			{
-				"buffer_size": 164,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/components/gutter.coffee",
-			"settings":
-			{
-				"buffer_size": 506,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "test/index.coffee",
-			"settings":
-			{
-				"buffer_size": 399,
-				"line_ending": "Windows"
+				"buffer_size": 4206,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -428,6 +412,20 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Drew/Desktop/GitHubLog.txt",
+		"/C/Users/Drew/Development/Code/EditIt/README.md",
+		"/C/Users/Drew/AppData/Local/Temp/fbtmp/www.google.com/index.html",
+		"/C/Users/Drew/Development/Code/EditIt/require.js",
+		"/C/Users/Drew/Development/Code/EditIt/???",
+		"/C/Users/Drew/Development/Code/EditIt/WIP/lazy-render/index.js",
+		"/C/Users/Drew/Development/Code/EditIt/test/index.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/src/components/gutter.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/src/index.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/src/components/index.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/src/utils/num.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/src/utils/el.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/WIP/lazy-render/index.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/src/components/editor.coffee",
 		"/C/Users/Drew/Development/Code/EditIt/lib/utils/events.js",
 		"/C/Users/Drew/Development/Code/EditIt/lib/utils/extend.js",
 		"/C/Users/Drew/Development/Code/EditIt/src/utils/events.js",
@@ -435,15 +433,10 @@
 		"/C/Users/Drew/Development/Code/EditIt/lib/components/time.js",
 		"/C/Users/Drew/Development/Code/EditIt/src/components/time.coffee",
 		"/C/Users/Drew/Development/Code/EditIt/lib/index.js",
-		"/C/Users/Drew/Development/Code/EditIt/src/components/gutter.coffee",
 		"/C/Users/Drew/Development/Code/EditIt/lib/components/gutter.js",
 		"/C/Users/Drew/Development/Code/EditIt/lib/components/layers.js",
 		"/C/Users/Drew/Development/Code/EditIt/src/components/layers.coffee",
-		"/C/Users/Drew/Development/Code/EditIt/src/components/editor.coffee",
-		"/C/Users/Drew/Development/Code/EditIt/src/index.coffee",
-		"/C/Users/Drew/Development/Code/EditIt/test/index.coffee",
 		"/C/Users/Drew/Development/Code/EditIt/lib/components/index.js",
-		"/C/Users/Drew/Development/Code/EditIt/src/components/index.coffee",
 		"/C/Users/Drew/Development/Code/EditIt/lib/components/editor.js",
 		"/C/Users/Drew/Development/Code/EditIt/css/layers.styl",
 		"/C/Users/Drew/Development/Code/EditIt/css/gutter.styl",
@@ -458,7 +451,6 @@
 		"/C/Users/Drew/Development/Code/EditIt/jquery.js",
 		"/C/Users/Drew/Development/Code/EditIt/lib/css/index.styl",
 		"/C/Users/Drew/Development/Code/EditIt/test/index.css",
-		"/C/Users/Drew/Development/Code/EditIt/require.js",
 		"/C/Users/Drew/Downloads/bash-command-not-found.sh",
 		"/C/Users/Drew/Downloads/shell_method_missing.rb",
 		"/C/Users/Drew/Downloads/drnic-inputrc.sh",
@@ -547,15 +539,7 @@
 		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Theme - Pseudo OSX/Pseudo OSX.sublime-theme",
 		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/ZenCoding/Default (Windows).sublime-keymap",
 		"/C/Users/Drew/Development/Workspace/jQuery element from selector/WebContent/create.js",
-		"/C/Users/Drew/Development/UserInfo.java",
-		"/C/Users/Drew/Development/WriteFile.java",
-		"/C/Users/Drew/Development/Code/natural.js",
-		"/C/Users/Drew/Development/test-project.sublime-workspace",
-		"/C/Users/Drew/Development/www/xampp/xampp/xampp.js",
-		"/C/Users/Drew/Development/noBadCharacters.js",
-		"/C/Users/Drew/Development/Code/nodejs-app-0/package.json",
-		"/C/Users/Drew/Development/Code/nodejs-app-0/index.js",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/HTML/html_completions.py"
+		"/C/Users/Drew/Development/UserInfo.java"
 	],
 	"find":
 	{
@@ -573,6 +557,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"div",
 			"switch (",
 			" (",
 			"for (",
@@ -621,29 +606,28 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/components/editor.coffee",
+					"file": "WIP/lazy-render/index.html",
 					"settings":
 					{
-						"buffer_size": 793,
+						"buffer_size": 331,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								767,
-								767
+								288,
+								288
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -653,24 +637,23 @@
 				},
 				{
 					"buffer": 1,
-					"file": "src/utils/el.coffee",
+					"file": "WIP/lazy-render/index.styl",
 					"settings":
 					{
-						"buffer_size": 805,
+						"buffer_size": 184,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								636,
-								636
+								136,
+								136
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Stylus/Syntaxes/Stylus.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -680,18 +663,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "src/utils/num.coffee",
+					"file": "WIP/lazy-render/index.coffee",
 					"settings":
 					{
-						"buffer_size": 115,
+						"buffer_size": 4206,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								105,
-								105
+								3762,
+								3762
 							]
 						],
 						"settings":
@@ -699,114 +682,7 @@
 							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/components/index.coffee",
-					"settings":
-					{
-						"buffer_size": 2520,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1390,
-								1390
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 572.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/index.coffee",
-					"settings":
-					{
-						"buffer_size": 164,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								164,
-								164
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/components/gutter.coffee",
-					"settings":
-					{
-						"buffer_size": 506,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								203,
-								203
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "test/index.coffee",
-					"settings":
-					{
-						"buffer_size": 399,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								399,
-								399
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1716.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
