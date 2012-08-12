@@ -3,10 +3,19 @@ define (require, exports, module) ->
 
 	require '../../jquery'
 
+	MutationObserver = window.MutationObserver || window.WebKitMutationObserver
+
 	class Component extends EventEmitter
 		constructor: (name, el) ->
 			@name = @constructor.name
 			@_registeredComps = []
+			@_mutationObserver = new MutationObserver (mutations) =>
+				@emit 'changed'
+			@_mutationObserver.options = 
+				attributes: true
+				childList: true
+				characterData: true
+				subtree: true
 			
 			if name instanceof HTMLElement || name instanceof $ || typeof(el) == 'string'
 				name = [el, el = name][0]
@@ -17,12 +26,9 @@ define (require, exports, module) ->
 			if typeof(name) == 'string'
 				@name = name
 
-			@on 'comp:sub:add', (comp) ->
-				@update()
-
 			@comps = []
 			@_comps @comps
-			@update()
+			@_registerComps
 
 		update: ->
 			if !(@el instanceof HTMLElement || @el instanceof $)
@@ -34,6 +40,12 @@ define (require, exports, module) ->
 			@el.addClass 'editit-comp'
 			@el.attr 'data-comp', @name.replace(/([a-z])([A-Z])/g, '$1$2').replace(/_/g, '-').toLowerCase()
 			@el.html ''
+
+			unless @el.data('-editit-comp-events')
+				for el in @el
+					@_mutationObserver.observe(el, @_mutationObserver.options)
+
+				@el.data '-editit-comp-events', true
 
 			Component._updateComps @comps
 
@@ -47,7 +59,7 @@ define (require, exports, module) ->
 			subEls = []
 
 			doIt = (key, s) =>
-				if s instanceof Component || typeof(s.render) == 'function'
+				if s instanceof Component || typeof(s.update) == 'function'
 					subEls[key] = s.update()
 				else if typeof(s.length) == 'number' || typeof(s) == 'object' || typeof(s) == 'string'
 					subEls[key] = @_updateComps s
@@ -80,12 +92,18 @@ define (require, exports, module) ->
 		_registerComp: (comp) ->
 			unless ~@_registeredComps.indexOf(comp)
 				@_registeredComps.push comp
-				comp.on 'update', =>
+				comp.on 'update', => @emit 'changed'
+				comp.on 'changed', => @emit 'changed'
 
-
-				setTimeout (=> @emit 'comp:sub:add', comp), 0
+				setTimeout (=>
+					@update()
+					@emit 'comp:sub:add', comp
+				), 0
 
 			comp
+
+		_registerComps: (comps = @comps) ->
+			@_registerComp comp for comp of comps when comp instanceof Component || typeof(comp.update) == 'function'
 
 		_update: (el, comps) ->
 		_comps: (comps) ->

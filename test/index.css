@@ -37,4 +37,5 @@
 /* line 11 : C:\Users\Drew\Development\Code\EditIt\test\index.styl */
 #editor .editit-comp[data-comp=linenum] {
   text-align: right;
+  display: block;
 }

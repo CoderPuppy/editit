@@ -8,6 +8,7 @@
     editor = editIt.edit(editorEl);
     Component = require('../lib/components/index');
     linenum = new Component('linenum');
+    linenum.tag = 'span';
     linenum._update = function(el, comps) {
       return el.text('1');
     };
