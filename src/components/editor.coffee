@@ -9,32 +9,13 @@ define (require, exports, module) ->
 	require '../../jquery'
 
 	class Editor extends Component
-		constructor: ->
-			self = this
+		_comps: (comps) ->
+			comps.gutter = new Gutter
+			comps.layers = new Layers
 
-			super
-
-			(->
-				@gutter = new Gutter
-				@layers = new Layers
-				@time   = new Time
-			).call @comps
-
-		_render: (el, comps) ->
-			el.html ''
-
-			resize = (el) ->
-				comps.layers.css 'left', utils.el.measure(el).width + 'px'
-
-			@comps.gutter.on 'rendered', resize
-			@once 'render', ->
-				@comps.gutter.off 'rendered', resize
-
-			el.append comps.gutter
-			el.append comps.layers
-			# el.append comps.time
+		_update: (el, comps) ->
+			el.append comps.gutter.el
+			el.append comps.layers.el
 			el.append new Date().toString()
-
-			resize comps.gutter
 
 	module.exports = Editor

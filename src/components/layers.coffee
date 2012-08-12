@@ -4,20 +4,16 @@ define (require, exports, module) ->
 	require '../../jquery'
 
 	class Layers extends Component
-		constructor: ->
-			super
+		_comps: (comps) ->
+			comps.layers = @layers = []
 
-			@comps.layers = @layers = []
-
-		_render: (el, comps) ->
-			el.html ''
-
-			comps.layers.forEach (comp) ->
-				el.append comp
+		_update: (el, comps) ->
+			comps.layers.forEach (layer) ->
+				el.append layer.el
 
 		add: (comp) ->
 			if comp instanceof Component || typeof(comp.render) == 'function'
-				@layers.push comp
+				@layers.push @_registerComp(comp)
 
 			this
 

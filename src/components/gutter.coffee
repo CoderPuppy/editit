@@ -4,16 +4,12 @@ define (require, exports, module) ->
 	require '../../jquery'
 
 	class Gutter extends Component
-		constructor: ->
-			super
-
-			@comps.lines = []
-
-		_render: (el, comps) ->
-			el.html ''
-
+		_update: (el, comps) ->
 			for line in comps.lines
-				el.append line
+				el.append line.el
+
+		_comps: (comps) ->
+			comps.lines = []
 
 		line: (line, comp) ->
 			return this if line < 0
@@ -21,7 +17,7 @@ define (require, exports, module) ->
 			@line line - 1
 
 			if comp instanceof Component || typeof(comp.render) == 'function'
-				@comps.lines.push comp || @comps.lines[line] || new Component
+				@comps.lines.push @_registerComp(comp || @comps.lines[line] || new Component)
 
 			this
 

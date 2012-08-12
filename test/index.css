@@ -1,3 +1,11 @@
+
+/* line 1 : C:\Users\Drew\AppData\Roaming\npm\node_modules\stylus\lib\functions\index.styl */
+
+/* line 2 : C:\Users\Drew\Development\Code\EditIt\style\index.styl */
+
+/* line 2 : C:\Users\Drew\Development\Code\EditIt\style\gutter.styl */
+
+/* line 1 : C:\Users\Drew\Development\Code\EditIt\style\gutter.styl */
 .editit-comp[data-comp=gutter] {
   position: absolute;
   height: 100%;
@@ -7,15 +15,26 @@
   background: #b3b3b3;
   color: #000;
 }
+
+/* line 10 : C:\Users\Drew\Development\Code\EditIt\style\layers.styl */
+
+/* line 1 : C:\Users\Drew\Development\Code\EditIt\style\layers.styl */
 .editit-comp[data-comp=layers] {
   position: absolute;
   right: 0;
   height: 100%;
 }
+
+/* line 3 : C:\Users\Drew\Development\Code\EditIt\test\index.styl */
 #editor {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+/* line 11 : C:\Users\Drew\Development\Code\EditIt\test\index.styl */
+#editor .editit-comp[data-comp=linenum] {
+  text-align: right;
 }

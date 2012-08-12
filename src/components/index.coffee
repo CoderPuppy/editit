@@ -4,74 +4,53 @@ define (require, exports, module) ->
 	require '../../jquery'
 
 	class Component extends EventEmitter
-		constructor: (name = @constructor.name, el) ->
+		constructor: (name, el) ->
 			@name = @constructor.name
+			@_registeredComps = []
 			
-			if name instanceof HTMLElement || name instanceof $
+			if name instanceof HTMLElement || name instanceof $ || typeof(el) == 'string'
 				name = [el, el = name][0]
 
 			if el instanceof HTMLElement || el instanceof $
 				@el = el
-			else if typeof(name) == 'string'
+
+			if typeof(name) == 'string'
 				@name = name
 
-			@tag = 'div'
-			@force = false
+			@on 'comp:sub:add', (comp) ->
+				@update()
+
 			@comps = []
-			@_needsRender = true
+			@_comps @comps
+			@update()
 
-		autorender: (time) ->
-			clearTimeout @_autorenderId
-
-			if time > 0
-				render = =>
-					@render()
-
-					@_autorenderId = setTimeout render, time
-
-				render()
-
-			this
-
-		render: (el, force) ->
-			if typeof(el) == 'boolean'
-				el = [force, force = el]
-
-			el = if el instanceof HTMLElement || el instanceof $ then el else @el
-
-			if !(el instanceof HTMLElement || el instanceof $)
-				console.warn 'No element to render to for %s, creating %s', @name, @tag
-				el = $(document.createElement @tag)
-
-			el = $(el)
-
+		update: ->
 			if !(@el instanceof HTMLElement || @el instanceof $)
-				@el = el
+				console.warn 'No element to render to for %s, creating %s', @name, @tag
+				@el = $(document.createElement @tag)
 
-			el.addClass 'editit-comp'
-			el.attr 'data-comp', @name.replace(/([a-z])([A-Z])/g, '$1$2').replace(/_/g, '-').toLowerCase()
+			@el = $(@el) unless @el instanceof $
 
-			@emit 'rendering'
+			@el.addClass 'editit-comp'
+			@el.attr 'data-comp', @name.replace(/([a-z])([A-Z])/g, '$1$2').replace(/_/g, '-').toLowerCase()
+			@el.html ''
 
-			comps = Component._renderComps @comps
+			Component._updateComps @comps
 
-			if force || @force || @_needsRender
-				@emit 'render'
-				@_render el, comps
-				@emit 'rendered', el
+			@_update @el, @comps
 
-				@_needsRender = false
+			@emit 'update'
 
-			el
+			@el
 
-		@_renderComps: (comps) ->
+		@_updateComps: (comps) ->
 			subEls = []
 
 			doIt = (key, s) =>
 				if s instanceof Component || typeof(s.render) == 'function'
-					subEls[key] = s.render()
+					subEls[key] = s.update()
 				else if typeof(s.length) == 'number' || typeof(s) == 'object' || typeof(s) == 'string'
-					subEls[key] = @_renderComps s
+					subEls[key] = @_updateComps s
 
 			if typeof(comps) == 'object' || typeof(comps) == 'string'
 				names = Object.getOwnPropertyNames comps
@@ -85,7 +64,7 @@ define (require, exports, module) ->
 							doIt i, comp
 
 					names = names.filter (name) ->
-						if name == 'length' || /^[0-9]$/.test(name) || name == 'each' || name == 'forEach'
+						if name == 'length' || /^[0-9]+$/.test(name) || name == 'each' || name == 'forEach'
 							false
 						else
 							true
@@ -98,6 +77,18 @@ define (require, exports, module) ->
 
 			subEls
 
-		_render: (el, comps) ->
+		_registerComp: (comp) ->
+			unless ~@_registeredComps.indexOf(comp)
+				@_registeredComps.push comp
+				comp.on 'update', =>
+
+
+				setTimeout (=> @emit 'comp:sub:add', comp), 0
+
+			comp
+
+		_update: (el, comps) ->
+		_comps: (comps) ->
+		tag: 'div'
 
 	module.exports = Component

@@ -7,10 +7,8 @@
     editIt = require('../lib/index');
     editor = editIt.edit(editorEl);
     Component = require('../lib/components/index');
-    editor.autorender(10);
     linenum = new Component('linenum');
-    linenum.tag = 'span';
-    linenum._render = function(el, comps) {
+    linenum._update = function(el, comps) {
       return el.text('1');
     };
     editor.comps.gutter.line(0, linenum);
