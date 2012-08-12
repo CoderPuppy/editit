@@ -12,7 +12,7 @@ define (require, exports, module) ->
 				el.append layer.el
 
 		add: (comp) ->
-			if comp instanceof Component || typeof(comp.render) == 'function'
+			if comp instanceof Component || typeof(comp.update) == 'function'
 				@layers.push @_registerComp(comp)
 
 			this

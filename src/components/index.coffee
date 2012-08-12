@@ -2,20 +2,31 @@ define (require, exports, module) ->
 	{EventEmitter} = require '../utils/events'
 
 	require '../../jquery'
-
-	MutationObserver = window.MutationObserver || window.WebKitMutationObserver
+	require '../utils/extend'
+	MutationSummary = require '../utils/mutation_summary'
 
 	class Component extends EventEmitter
 		constructor: (name, el) ->
 			@name = @constructor.name
 			@_registeredComps = []
-			@_mutationObserver = new MutationObserver (mutations) =>
-				@emit 'changed'
-			@_mutationObserver.options = 
-				attributes: true
-				childList: true
-				characterData: true
-				subtree: true
+			@_mutationSummaryOptions =
+				callback: (summaries) =>
+					debugger
+					summary =
+						added: summaries.reduce(( (a, s) -> a.concat(s.added) ), [])
+						removed: summaries.reduce(( (a, s) -> a.concat(s.removed) ), [])
+						reparented: summaries.reduce(( (a, s) -> a.concat(s.reparented) ), [])
+						reordered: summaries.reduce(( (a, s) -> a.concat(s.reordered) ), [])
+
+					nodes = summary.added.concat(summary.reordered).concat(summary.removed).concat(summary.reparented)
+					should = nodes.some((node) => ~[].slice.call(@el[0].childNodes).indexOf(node))
+					# console.log summaries, this, should, nodes.map((n) -> if n.dataset then n.dataset.comp else n.nodeName)
+
+					@emit 'changed' if should
+				observeOwnChanges: true
+				queries: [
+					{ all: true }
+				]
 			
 			if name instanceof HTMLElement || name instanceof $ || typeof(el) == 'string'
 				name = [el, el = name][0]
@@ -27,6 +38,7 @@ define (require, exports, module) ->
 				@name = name
 
 			@comps = []
+			@changed = true
 			@_comps @comps
 			@_registerComps
 
@@ -39,15 +51,15 @@ define (require, exports, module) ->
 
 			@el.addClass 'editit-comp'
 			@el.attr 'data-comp', @name.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/_/g, '-').toLowerCase()
-			@el.html ''
 
-			unless @el.data('-editit-comp-events')
-				for el in @el
-					@_mutationObserver.observe(el, @_mutationObserver.options)
+			unless @el.data('-editit-comp-events') == @name
+				@_mutationSummary = new MutationSummary { rootNode: @el[0] }.extend(@_mutationSummaryOptions)
 
-				@el.data '-editit-comp-events', true
+				@el.data '-editit-comp-events', @name
 
 			Component._updateComps @comps
+
+			@el.html ''
 
 			@_update @el, @comps
 
@@ -90,11 +102,14 @@ define (require, exports, module) ->
 			subEls
 
 		_registerComp: (comp) ->
+			console.log "Registering #{comp.name} for #{@name}"
 			unless ~@_registeredComps.indexOf(comp)
 				@_registeredComps.push comp
-				comp.on 'update', => @emit 'changed'
-				comp.on 'changed', => @emit 'changed'
+				onChange = =>
+					@emit 'changed'
 
+				comp.on 'update', onChange
+				comp.on 'changed', onChange
 				setTimeout (=>
 					@update()
 					@emit 'comp:sub:add', comp
