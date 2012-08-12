@@ -17,13 +17,13 @@ scroll = function() {
   };
   howMany = viewport.height / 16;
   if (amountScrolled + viewport.height >= height) {
-    paddingTop = height - viewport.height;
+    paddingTop = height - (howMany * 16);
     paddingBottom = 0;
     startLine = lines.length - howMany;
   } else {
     startLine = amountScrolled / 16;
     paddingTop = amountScrolled - (amountScrolled % 16);
-    paddingBottom = (height - paddingTop) - viewport.height;
+    paddingBottom = (height - paddingTop) - (howMany * 16);
   }
   endLine = startLine + howMany;
   text.css({
