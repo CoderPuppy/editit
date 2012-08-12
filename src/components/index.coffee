@@ -38,7 +38,7 @@ define (require, exports, module) ->
 			@el = $(@el) unless @el instanceof $
 
 			@el.addClass 'editit-comp'
-			@el.attr 'data-comp', @name.replace(/([a-z])([A-Z])/g, '$1$2').replace(/_/g, '-').toLowerCase()
+			@el.attr 'data-comp', @name.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/_/g, '-').toLowerCase()
 			@el.html ''
 
 			unless @el.data('-editit-comp-events')
