@@ -1,7 +1,7 @@
 define (require, exports, module) ->
 	Component = require './index'
 
-	require('../../jquery');
+	require '../../jquery'
 
 	class Gutter extends Component
 		constructor: ->
