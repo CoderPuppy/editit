@@ -5,6 +5,7 @@ define (require, exports, module) ->
 	Component = require '../lib/components/index'
 
 	linenum = new Component('linenum')
+	linenum.tag = 'span'
 	linenum._update = (el, comps) ->
 		el.text '1'
 
