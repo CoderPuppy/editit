@@ -19,7 +19,7 @@ define (require, exports, module) ->
 						reordered: summaries.reduce(( (a, s) -> a.concat(s.reordered) ), [])
 
 					nodes = summary.added.concat(summary.reordered).concat(summary.removed).concat(summary.reparented)
-					should = nodes.some((node) => ~[].slice.call(@el[0].childNodes).indexOf(node))
+					should = nodes.some((node) => ~[].slice.call(@el[0].childNodes).indexOf(node) || ~[].slice.call(@el).indexOf(node))
 					# console.log summaries, this, should, nodes.map((n) -> if n.dataset then n.dataset.comp else n.nodeName)
 
 					@emit 'changed' if should
@@ -40,7 +40,7 @@ define (require, exports, module) ->
 			@comps = []
 			@changed = true
 			@_comps @comps
-			@_registerComps
+			@_registerComps()
 
 		update: ->
 			if !(@el instanceof HTMLElement || @el instanceof $)
@@ -119,6 +119,8 @@ define (require, exports, module) ->
 
 		_registerComps: (comps = @comps) ->
 			@_registerComp comp for comp of comps when comp instanceof Component || typeof(comp.update) == 'function'
+
+			this
 
 		_update: (el, comps) ->
 		_comps: (comps) ->
