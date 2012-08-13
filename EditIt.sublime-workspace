@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"on",
+				"onChange"
+			],
+			[
+				"M",
+				"MutationSummary"
+			],
+			[
+				"Mu",
+				"MutationObserver"
+			],
+			[
+				"mu",
+				"mutation_summary"
+			],
+			[
+				"_",
+				"_mutationSummaryOptions"
+			],
+			[
+				"_mut",
+				"_mutationSummaryOptions"
+			],
+			[
+				"Mutat",
+				"MutationSummary"
+			],
+			[
+				"mutat",
+				"MutationSummary"
+			],
+			[
+				"_regi",
+				"_registerComp"
+			],
+			[
+				"_reg",
+				"_registerComps"
+			],
+			[
+				"ed",
+				"editit-comp-events"
+			],
+			[
+				"_re",
+				"_registeredComps"
+			],
+			[
+				"render",
+				"_renderComps"
+			],
+			[
+				"com",
+				"Component"
+			],
+			[
 				"start",
 				"startLine"
 			],
@@ -46,10 +102,6 @@
 			[
 				"_render",
 				"_renderComps"
-			],
-			[
-				"_",
-				"_subComps"
 			],
 			[
 				"con",
@@ -216,27 +268,67 @@
 	"buffers":
 	[
 		{
-			"file": "WIP/lazy-render/index.html",
+			"file": "src/components/gutter.coffee",
 			"settings":
 			{
-				"buffer_size": 331,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "WIP/lazy-render/index.styl",
-			"settings":
-			{
-				"buffer_size": 184,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "WIP/lazy-render/index.coffee",
-			"settings":
-			{
-				"buffer_size": 4206,
+				"buffer_size": 500,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/index.coffee",
+			"settings":
+			{
+				"buffer_size": 3713,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/editor.coffee",
+			"settings":
+			{
+				"buffer_size": 746,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/layers.coffee",
+			"settings":
+			{
+				"buffer_size": 422,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/index.coffee",
+			"settings":
+			{
+				"buffer_size": 164,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/index.styl",
+			"settings":
+			{
+				"buffer_size": 169,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/index.coffee",
+			"settings":
+			{
+				"buffer_size": 376,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/utils/el.coffee",
+			"settings":
+			{
+				"buffer_size": 805,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -412,21 +504,31 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Drew/Development/Code/EditIt/lib/utils/el.js",
+		"/C/Users/Drew/Development/Code/EditIt/lib/utils/mutation_summary.js",
+		"/C/Users/Drew/Downloads/mutation_summary.js",
+		"/C/Users/Drew/Development/Code/EditIt/lib/utils/events.js",
+		"/C/Users/Drew/Development/Code/EditIt/style/index.styl",
+		"/C/Users/Drew/Development/Code/EditIt/test/index.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/style/gutter.styl",
+		"/C/Users/Drew/Development/Code/EditIt/WIP/lazy-render/orig.html",
+		"/C/Users/Drew/Development/Code/EditIt/WIP/lazy-render/index.coffee",
+		"/C/Users/Drew/Development/Code/EditIt/WIP/lazy-render/index.styl",
+		"/C/Users/Drew/Development/Code/EditIt/WIP/lazy-render/index.html",
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/C/Users/Drew/Development/Code/EditIt/WIP/lazy-render/index.css",
 		"/C/Users/Drew/Desktop/GitHubLog.txt",
 		"/C/Users/Drew/Development/Code/EditIt/README.md",
 		"/C/Users/Drew/AppData/Local/Temp/fbtmp/www.google.com/index.html",
 		"/C/Users/Drew/Development/Code/EditIt/require.js",
 		"/C/Users/Drew/Development/Code/EditIt/???",
 		"/C/Users/Drew/Development/Code/EditIt/WIP/lazy-render/index.js",
-		"/C/Users/Drew/Development/Code/EditIt/test/index.coffee",
 		"/C/Users/Drew/Development/Code/EditIt/src/components/gutter.coffee",
 		"/C/Users/Drew/Development/Code/EditIt/src/index.coffee",
 		"/C/Users/Drew/Development/Code/EditIt/src/components/index.coffee",
 		"/C/Users/Drew/Development/Code/EditIt/src/utils/num.coffee",
 		"/C/Users/Drew/Development/Code/EditIt/src/utils/el.coffee",
-		"/C/Users/Drew/Development/Code/EditIt/WIP/lazy-render/index.coffee",
 		"/C/Users/Drew/Development/Code/EditIt/src/components/editor.coffee",
-		"/C/Users/Drew/Development/Code/EditIt/lib/utils/events.js",
 		"/C/Users/Drew/Development/Code/EditIt/lib/utils/extend.js",
 		"/C/Users/Drew/Development/Code/EditIt/src/utils/events.js",
 		"/C/Users/Drew/Development/Code/EditIt/test/index.styl",
@@ -529,17 +631,7 @@
 		"/C/Users/Drew/Development/Code/fun-with-php/php.js",
 		"/C/Users/Drew/.ssh/id_rsa",
 		"/C/Users/Drew/.ssh/id_rsa.pub",
-		"/C/Users/Drew/Development/Libraries/node/deps/v8/src/list-inl.h",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Eval Sel/eval_sel.py",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Eval Sel/Default (Windows).sublime-keymap",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Eval Sel/repl.js",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Eval Sel/eval_sel.sublime-settings",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Theme - Pseudo OSX/Pseudo OSX.sublime-theme",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/ZenCoding/Default (Windows).sublime-keymap",
-		"/C/Users/Drew/Development/Workspace/jQuery element from selector/WebContent/create.js",
-		"/C/Users/Drew/Development/UserInfo.java"
+		"/C/Users/Drew/Development/Libraries/node/deps/v8/src/list-inl.h"
 	],
 	"find":
 	{
@@ -557,6 +649,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" || []",
+			"summaries",
+			"reordered",
+			"debugger",
+			"define",
+			"define(",
+			"define",
+			"remove",
+			"domain",
+			".render",
+			"s instanceof Component || typeof(s.update) == 'function'",
+			"comp",
+			"  ",
+			"<",
+			">",
 			"div",
 			"switch (",
 			" (",
@@ -606,28 +713,29 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "WIP/lazy-render/index.html",
+					"file": "src/components/gutter.coffee",
 					"settings":
 					{
-						"buffer_size": 331,
+						"buffer_size": 500,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								288,
-								288
+								155,
+								155
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -637,18 +745,125 @@
 				},
 				{
 					"buffer": 1,
-					"file": "WIP/lazy-render/index.styl",
+					"file": "src/components/index.coffee",
 					"settings":
 					{
-						"buffer_size": 184,
+						"buffer_size": 3713,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								136,
-								136
+								3121,
+								3121
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1196.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/components/editor.coffee",
+					"settings":
+					{
+						"buffer_size": 746,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								457,
+								457
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/components/layers.coffee",
+					"settings":
+					{
+						"buffer_size": 422,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								280,
+								280
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/index.coffee",
+					"settings":
+					{
+						"buffer_size": 164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								154,
+								154
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "test/index.styl",
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								169
 							]
 						],
 						"settings":
@@ -662,27 +877,55 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "WIP/lazy-render/index.coffee",
+					"buffer": 6,
+					"file": "test/index.coffee",
 					"settings":
 					{
-						"buffer_size": 4206,
+						"buffer_size": 376,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3762,
-								3762
+								306,
+								306
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1716.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/utils/el.coffee",
+					"settings":
+					{
+						"buffer_size": 805,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36,
+								36
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
